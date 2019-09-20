@@ -16,7 +16,6 @@ class MyFooter
     public function  __construct()
     {
         add_action('admin_menu',array($this,'settingMenu'));
-        add_action( 'wp_footer', array($this,'selectOption') );
         add_filter('manage_posts_columns', array($this,'posts_columns_id'), 5);
         add_action('manage_posts_custom_column', array($this,'posts_custom_id_columns'), 5, 2);
         add_filter('admin_footer_text', array($this,'remove_footer_admin'));
@@ -47,14 +46,6 @@ class MyFooter
     }
 
     //select options
-    public function selectOption()
-    {
-        global $wpdb;
-        $table_name= $wpdb->prefix ."options";
-        $footer=$wpdb->get_var( "SELECT option_value FROM $table_name WHERE option_name ='footer_option'" );
-        echo $footer;
-    }
-
     function posts_columns_id($defaults){
         $defaults['wps_post_id'] = __('Featured');
         return $defaults;
@@ -92,41 +83,27 @@ class MyFooter
     //add options when actice
     function active_plugin()
     {
-        $optionVersion="my Footer Create";
-        add_option("footer_option",$optionVersion,"","yes");
-        global $wpdb;
-        $table_name= $wpdb->prefix ."options";
-        $wpdb->update(
-            $table_name,
-            array('autoload'=>'yes'),
-            array('option_name'=>'footer_option')
-        );
+
     }
 
     //update options when deactive
     function deactive(){
-        global $wpdb;
-        $table_name= $wpdb->prefix ."options";
-        $wpdb->update(
-            $table_name,
-            array('autoload'=>'no'),
-            array('option_name'=>'footer_option')
-        );
+
     }
 }
 require_once ABSPATH . "wp-admin/includes/upgrade.php";
 global $wpdb;
-/*$table_name =$wpdb->prefix ."featured";
+$table_name =$wpdb->prefix ."featured";
 if ($wpdb->get_var("SHOW TABLES LIKE '".$table_name."'")!=$table_name)
 {
     $sql="CREATE TABLE ".$table_name."(
    id INT NOT NULL AUTO_INCREMENT,
-   id_posts int NOT NULL,
    status VARCHAR(40) NOT NULL,
+    number int NOT NULL,
    PRIMARY KEY ( id )
     );";
     dbDelta($sql);
-}*/
+}
 
 
 $table_post=$wpdb->prefix ."posts";

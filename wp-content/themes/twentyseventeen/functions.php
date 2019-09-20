@@ -680,3 +680,13 @@ function random_function()
     }
 
 }
+
+function showPost()
+{
+
+
+
+    }
+
+
+add_action('wp_body_open','showPost');
