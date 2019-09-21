@@ -678,15 +678,6 @@ function random_function()
     else{
         $wpdb->update($table_name, array("status" => "no" ),array("ID" => $id));
     }
-
 }
-
-function showPost()
-{
-
-
-
-    }
-
 
 add_action('wp_body_open','showPost');

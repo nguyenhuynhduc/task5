@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab60509-169a-4e0d-937d-042abf5eadb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/MyPost/viewPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/MyPost/pageSetting.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/MyPost/pageSetting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/MyPost/plugin-creat-footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/MyPost/plugin-creat-footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +16,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1R2Q5ZJWsnLf8DcnFKfZByd7PUF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,6 +50,7 @@
       <updated>1568862529058</updated>
       <workItem from="1568862530764" duration="20327000" />
       <workItem from="1568941797143" duration="25236000" />
+      <workItem from="1569027902875" duration="970000" />
     </task>
     <servers />
   </component>
@@ -63,7 +62,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
